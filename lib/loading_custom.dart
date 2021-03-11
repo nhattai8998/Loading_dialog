@@ -195,8 +195,8 @@ class _BodyState extends State<_Body> {
     final loader = Align(
       alignment: _progressWidgetAlignment,
       child: SizedBox(
-        width: 40.0,
-        height: 40.0,
+        width: 50.0,
+        height: 50.0,
         child: _progressWidget,
       ),
     );
@@ -212,6 +212,7 @@ class _BodyState extends State<_Body> {
                 padding: const EdgeInsets.symmetric(horizontal: 15),
                 child: loader,
               ),
+              SizedBox(width: 5),
               Expanded(
                   child: Container(
                 alignment: Alignment.centerLeft,
