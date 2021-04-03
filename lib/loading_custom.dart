@@ -111,7 +111,7 @@ class LoadingDialog {
   }
 
   Future<bool> hide() async {
-    Future.delayed(Duration(milliseconds: 500)).then((value) async {
+    await Future.delayed(Duration(milliseconds: 500)).then((value) async {
       try {
         if (_isShowing) {
           _isShowing = false;
